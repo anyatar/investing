@@ -35,6 +35,6 @@ DocumentRoot "/path/to/project/public"
 
 7. Run the test script from test directory: php test.php. The results will be automatically updated in the browser.
 
-8. You can change the configuration json file in the 'module' directory, refresh the application and repeat the steps: 4-5
+8. If you want to use a custom configuration file, you can rename module/config.json-dist to module/config.json, edit as needed, and then repeat the steps: 4-5
 
 9. Enjoy!
