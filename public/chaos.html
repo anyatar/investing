@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" ng-app="chaosServer">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+
+ <!-- internal scripts -->
+<script src="js/Application.js"></script>
+
+<title>Exam</title>
+</head>
+<body>
+    <div class="container" ng-controller="ModeController">
+     	<div class="widget-header">
+			<h3>Chaos Server</h3>
+		</div>
+		
+		<div class="widget-content">
+			<hr />
+			<div ng-repeat="mode in modesData">
+				<div class="radio">
+				  <input type="radio" ng-model="checkedMode" value="{{mode}}" name="optradio" id="{{mode}}" ng-click="setMode(mode)"><label for="{{mode}}">Set Mode to {{mode}}</label>
+				</div>
+			</div>
+			
+		    <hr />
+		       	<div ng-show="results" class="table-responsive">
+		       		<div class="widget-header">
+						<h4>Last Results</h4>
+					</div>
+				    <table class="table table-bordered table-striped">
+				          <thead class="thead-dark">
+				            <tr>
+				              <th>Status</th>
+				              <th>Percent</th>
+				            </tr>
+				          </thead>
+				          <tbody>
+				            <tr ng-repeat="res in results">
+				              <td>{{res.status}}</td>
+				              <td>{{res.count}}</td>
+				            </tr>
+				         </tbody>
+				    </table>
+			    </div>
+		</div> <!-- /widget-content -->
+       	<p>&copy; Chaos Server 2019 by Anya Suraski</p>
+	</div>
+	
+</body>
+</html>
