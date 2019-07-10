@@ -1,4 +1,4 @@
-# CRUD project
+# Chaos Server project
 
 ## Requirements
 
