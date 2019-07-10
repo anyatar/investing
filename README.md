@@ -31,8 +31,10 @@ DocumentRoot "/path/to/project/public"
 
 5. Open http://server_address:20081/chaos.html . Here you can set the mode and see results table after you run the test script
 
-6. Run the test script from test directory: php test.php. The results will be automatically updated in the browser.
+6. Open test/test.php and update BASE_URL if needed.
 
-7. You can change the configuration json file in the 'module' directory, refresh the application and repeat the steps: 4-5
+7. Run the test script from test directory: php test.php. The results will be automatically updated in the browser.
 
-8. Enjoy!
+8. You can change the configuration json file in the 'module' directory, refresh the application and repeat the steps: 4-5
+
+9. Enjoy!
