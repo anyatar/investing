@@ -43,7 +43,7 @@ class Test {
         if (isset($match[1])) {
             return $match[1];
         } else {
-            echo "Service unavalable\n";
+            echo "Error accessing $url\n";
             exit;
         }
     }
