@@ -22,7 +22,6 @@ DocumentRoot "/path/to/project/public"
   </Directory>
 </VirtualHost>
  ```  
-   It's also possible to change the existing default vhost to these settings.
 3. Restart Apache
 
 4. Open http://server_address:20080/chaos.html . Here you can set the mode and see results table after you run the test script
