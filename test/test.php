@@ -6,7 +6,7 @@ $test = new Test();
 $results = $test->run();
 print_r($results);
 
-echo "Test is done. Go to the application (e.g. http://localhost:20080/chaos.html) to see the results and enjoy!\n";
+echo "Test is done. Go to the application (e.g. http://localhost:20081/chaos.html) to see the results and enjoy!\n";
 
 class Test {
     
