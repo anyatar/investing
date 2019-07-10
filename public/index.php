@@ -1,5 +1,11 @@
 <?php
 
+define("DEBUG", true);
+if (DEBUG) {
+    error_reporting(E_ALL);
+    ini_set("display_errors", true);
+}
+
 if (!isset($_SERVER['REQUEST_URI'])) {
     http_response_code(404);
     exit;
