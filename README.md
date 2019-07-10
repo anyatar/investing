@@ -13,7 +13,7 @@
 2. Add a new vhost to Apache:
 ```
 Listen 20081
-<VirtualHost *:20080>
+<VirtualHost *:20081>
 DocumentRoot "/path/to/project/public"
 <Directory "/path/to/project/public">
    Options Indexes FollowSymLinks ExecCGI
